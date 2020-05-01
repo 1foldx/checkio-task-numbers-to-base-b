@@ -1,11 +1,13 @@
 <!-- Describe task in general -->
 
 <p>
-    Sum two passed ints
+   Positional notation
 </p>
 
 <p style="text-align: center;">
     <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+    Define a function to convert a number to the base given.
+    For hexadecimal conversion result must show hexadecimal symbols.
 </p>
 
 <!-- Explain input and output values -->
@@ -14,7 +16,7 @@
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> str. 
 </p>
 
 
@@ -25,12 +27,12 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">sumTwo(2, 3) == 5
-sumTwo(5, 7) == 12
+<pre class="brush: javascript">tobase(3, 2) == '11'
+tobase(5, 7) == '5'
 </pre>
 {% else %}
-<pre class="brush: python">sum_two(2, 3) == 5
-sum_two(5, 7) == 12
+<pre class="brush: python">tobase(3, 2) == '11'
+tobase(5, 7) == '5'
 </pre>
 {% endif %}
 </div>
@@ -41,12 +43,12 @@ sum_two(5, 7) == 12
 <p class="for_info_only">
 
     <strong>How it’s used: </strong>
-    <i>(math is used everywhere)</i>
+    <i>(Used in programming, networking..)</i>
 </p>
 
 <!-- Here you can explain some constraints for input-->
 <!-- The section is optional -->
 <p>
     <strong>Precondition:</strong>
-    <i>both given ints should be between -1000 and 1000</i>
+    <i>both given ints, a should be between 0 and 9999999, b should be  between 0 and 15</i>
 </p>
