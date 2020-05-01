@@ -31,8 +31,13 @@ TESTS = {
             "answer": '6',
          },
         {
-            "input": [16, 16],
-            "answer": '1F',
+            "input": [77777, 16],
+            "answer": '7FFF',
+         }
+        ,
+        {
+            "input": [9999, 16],
+            "answer": '270F',
          }
     ]
 }
