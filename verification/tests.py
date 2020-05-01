@@ -12,23 +12,27 @@ TESTS = {
     "Basics": [
         {
             "input": [3, 2],
-            "answer": 11,
+            "answer": '11',
             "explanation": "bin(3)?"
         },
         {
             "input": [5, 7],
-            "answer": 5,
+            "answer": '5',
             "explanation": "5%7=?"
         }
     ],
     "Extra": [
         {
             "input": [6, 10],
-            "answer": 6,
+            "answer": '6',
          },
         {
             "input": [6, 16],
-            "answer": 6,
+            "answer": '6',
+         },
+        {
+            "input": [16, 16],
+            "answer": '1F',
          }
     ]
 }
