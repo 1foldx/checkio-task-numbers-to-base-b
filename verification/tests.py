@@ -59,6 +59,13 @@ TESTS = {
          }, {
             "input": [8, 3],
             "answer": '22',
+         },
+        {
+            "input": [0, 16],
+            "answer": '0',
+         }, {
+            "input": [0, 3],
+            "answer": '0',
          }
             ]
 }
