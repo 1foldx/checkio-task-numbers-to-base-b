@@ -28,7 +28,7 @@ TESTS = {
         },
         {
             "input": [8, 7],
-            "answer": '10',
+            "answer": '11',
             "explanation": "1*7 + 1 * 1 = 8"
         }
     ],
