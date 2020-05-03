@@ -20,6 +20,17 @@ TESTS = {
             "answer": '5',
             "explanation": "5%7=?"
         }
+        ,
+        {
+            "input": [7, 7],
+            "answer": '10',
+            "explanation": "1*7 + 0 * 1 = 7"
+        },
+        {
+            "input": [8, 7],
+            "answer": '10',
+            "explanation": "1*7 + 1 * 1 = 8"
+        }
     ],
     "Extra": [
         {
@@ -45,6 +56,9 @@ TESTS = {
         {
             "input": [9999, 16],
             "answer": '270F',
+         }, {
+            "input": [8, 3],
+            "answer": '22',
          }
             ]
 }
