@@ -33,6 +33,24 @@ from checkio.referees import cover_codes
 
 from tests import TESTS
 
+
+# The second way to accept both cases would be this checker.
+# "answer" is from tests, "result" from the user.
+# checker must return a tuple: (True or False, "message" or None)
+# then CheckiOReferee(..., checker=checker, ...)
+
+# def checker(answer, result):
+#     return isinstance(result, str) and answer.upper() == result.upper(), None
+
+
+# "func" is the function written by the user, "data" is [a, b] from tests.
+# A cover can be useful to change data types and user result.
+case_cover = '''
+def cover(func, data):
+    return func(*data).upper()
+'''
+
+
 api.add_listener(
     ON_CONNECT,
     CheckiOReferee(
@@ -42,7 +60,7 @@ api.add_listener(
             "js": "tobase"
         },
         cover_code={
-            'python-3': cover_codes.unwrap_args,
+            'python-3': case_cover,
             'js-node': cover_codes.js_unwrap_args
         }
     ).on_ready)
